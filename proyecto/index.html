@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bechyss | Pan de Masa Madre Premium en Tibás</title>
+    <meta name="description"
+        content="Descubre los panes de masa madre artesanales de Bechyss. Fermentación lenta de 12 a 48 horas, 75% de hidratación y 10 sabores únicos hechos con amor en Tibás, San José.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Background Glow and Particles -->
+    <div class="bg-glow"></div>
+    <div class="particles-container" id="particles-container"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo-area">
+                <img src="images/logo_circle.png" alt="Bechyss Logo" class="nav-logo">
+                <span class="brand-name">BECHYSS</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#sabores" class="nav-link">Nuestros Sabores</a>
+                <a href="#conservacion" class="nav-link">Conservación</a>
+                <a href="#nosotros" class="nav-link">Quiénes Somos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20me%20gustaría%20hacer%20un%20pedido%20de%20pan%20de%20masa%20madre"
+                    target="_blank" class="btn-primary nav-cta">
+                    <i class="fa-brands fa-whatsapp"></i> Pedir Ahora
+                </a>
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Abrir Menú">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU DRAWER -->
+    <div class="mobile-menu" id="mobile-menu">
+        <nav class="mobile-nav-links">
+            <a href="#inicio" class="mobile-nav-link">Inicio</a>
+            <a href="#sabores" class="mobile-nav-link">Nuestros Sabores</a>
+            <a href="#conservacion" class="mobile-nav-link">Conservación</a>
+            <a href="#nosotros" class="mobile-nav-link">Quiénes Somos</a>
+            <a href="#contacto" class="mobile-nav-link">Contacto</a>
+            <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20me%20gustaría%20hacer%20un%20pedido%20de%20pan%20de%20masa%20madre"
+                target="_blank" class="btn-primary mobile-cta">
+                <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+            </a>
+        </nav>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="inicio">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-premium badge-arc animate-up" aria-label="Bollitos hechos con amor">
+                    <span class="badge-icon">🌾</span>
+                    <span class="badge-text">Bollitos hechos con amor</span>
+                    <svg class="badge-arc-svg" viewBox="0 0 380 110" role="img" aria-hidden="true">
+                        <path id="badge-arc-path" d="M 32 88 Q 190 20 348 88"></path>
+                        <text>
+                            <textPath href="#badge-arc-path" startOffset="50%" text-anchor="middle">
+                                BOLLITOS HECHOS CON AMOR
+                            </textPath>
+                        </text>
+                    </svg>
+                </div>
+                <h1 class="hero-title animate-up">Bechyss <br><span class="glow-text">Pan de Masa Madre</span></h1>
+                <p class="hero-subtitle animate-up">
+                    Pan artesanal fermentado naturalmente con levaduras salvajes y bacterias en Tibás.
+                    Corteza crujiente, miga tierna, sabor ácido equilibrado y máxima digestibilidad.
+                </p>
+                <div class="hero-actions animate-up">
+                    <a href="#sabores" class="btn-primary">
+                        <i class="fa-solid fa-bread-slice"></i> Ver Sabores
+                    </a>
+                    <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20quiero%20hacerte%20una%20consulta%20sobre%20tus%20panes%20de%20masa%20madre"
+                        target="_blank" class="btn-secondary">
+                        <i class="fa-regular fa-comments"></i> Consultar
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual-area animate-rotate">
+                <div class="sphere-glow"></div>
+                <div class="sphere">
+                    <div class="sphere-inner">
+                        <img src="images/hero_visual.jpg" alt="Canasta de Panes Bechyss" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- METRICS SECTION (SOCIAL PROOF) -->
+    <section class="metrics-section">
+        <div class="container metrics-grid">
+            <div class="metric-card glass-card">
+                <div class="metric-icon-wrap"><i class="fa-solid fa-clock"></i></div>
+                <div class="metric-value" data-target="48">0</div>
+                <div class="metric-label">Horas de Fermentación</div>
+            </div>
+            <div class="metric-card glass-card">
+                <div class="metric-icon-wrap"><i class="fa-solid fa-droplet"></i></div>
+                <div class="metric-value" data-target="75">0</div>
+                <div class="metric-label">% de Hidratación</div>
+            </div>
+            <div class="metric-card glass-card">
+                <div class="metric-icon-wrap"><i class="fa-solid fa-leaf"></i></div>
+                <div class="metric-value" data-target="100">0</div>
+                <div class="metric-label">% Natural y Sin Aditivos</div>
+            </div>
+            <div class="metric-card glass-card">
+                <div class="metric-icon-wrap"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div class="metric-value" data-target="10">0</div>
+                <div class="metric-label">Sabores Exclusivos</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLAVORS SECTION (SABORES) -->
+    <section class="flavors-section" id="sabores">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">NUESTRA CARTA</span>
+                <h2 class="section-title">Elige tu Sabor Favorito</h2>
+                <p class="section-subtitle">
+                    Cada hogaza es única, elaborada con ingredientes premium y largos reposos para desarrollar aromas
+                    complejos.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- 1. Matcha y Chocolate Blanco -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/pan_matcha.jpg" alt="Pan de Matcha y Chocolate Blanco"
+                                class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">Matcha y Chocolate Blanco</h3>
+                                <div class="price-badge">₡6,500</div>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Matcha & Choc. Blanco</h3>
+                            <p class="service-description">Una combinación exótica y visualmente hermosa. El sabor
+                                herbal del matcha se equilibra perfectamente con la dulzura de las chispas de chocolate
+                                blanco.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Masa Madre Activa</span>
+                                <span class="feature-tag">Matcha Premium</span>
+                                <span class="feature-tag">Dulce y Aromático</span>
+                            </div>
+                            <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20quiero%20ordenar%20el%20Pan%20de%20Matcha%20y%20Chocolate%20Blanco"
+                                target="_blank" class="btn-primary card-cta">Pedir Este Sabor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Chocolate -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/pan_chocolate.jpg" alt="Pan de Chocolate" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">Pan de Chocolate</h3>
+                                <div class="price-badge">₡5,200</div>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Pan de Chocolate</h3>
+                            <p class="service-description">Para amantes del chocolate. Elaborado con cacao puro al 100%
+                                y generosas chispas de chocolate belga. Miga húmeda y corteza crujiente.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Cacao 100%</span>
+                                <span class="feature-tag">Chispas Belgas</span>
+                                <span class="feature-tag">Miga Extra Húmeda</span>
+                            </div>
+                            <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20quiero%20ordenar%20el%20Pan%20de%20Chocolate"
+                                target="_blank" class="btn-primary card-cta">Pedir Este Sabor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Queso y Hierbas Italianas -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/pan_queso_hierbas.jpg" alt="Pan de Queso y Hierbas Italianas"
+                                class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">Queso y Hierbas Italianas</h3>
+                                <div class="price-badge">₡5,200</div>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Queso & Hierbas</h3>
+                            <p class="service-description">Pan aromático con una mezcla selecta de albahaca, orégano,
+                                romero y queso mozzarella fundido en la masa, creando una costra dorada e irresistible.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">Queso Mozzarella</span>
+                                <span class="feature-tag">Hierbas Italianas</span>
+                                <span class="feature-tag">Costra de Queso</span>
+                            </div>
+                            <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20quiero%20ordenar%20el%20Pan%20de%20Queso%20y%20Hierbas%20Italianas"
+                                target="_blank" class="btn-primary card-cta">Pedir Este Sabor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Arándanos y Semillas -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/pan_arandanos.jpg" alt="Pan de Arándanos" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">Arándanos y Semillas</h3>
+                                <div class="price-badge">₡4,600</div>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Arándanos y Semillas</h3>
+                            <p class="service-description">Una textura increíble gracias a la linaza en polvo y
+                                semillas, combinada con el toque agridulce y jugoso de los arándanos deshidratados
+                                enteros.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Arándanos</span>
+                                <span class="feature-tag">Linaza en Polvo</span>
+                                <span class="feature-tag">Mix de Semillas</span>
+                            </div>
+                            <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20quiero%20ordenar%20el%20Pan%20de%20Ar%C3%A1ndanos"
+                                target="_blank" class="btn-primary card-cta">Pedir Este Sabor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Dátiles y Nuez -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/pan_datiles_nuez.jpg" alt="Pan de Dátiles y Nuez" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">Dátiles y Nuez de Nogal</h3>
+                                <div class="price-badge">₡6,500</div>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Dátiles y Nuez</h3>
+                            <p class="service-description">La dulzura natural de los dátiles en trozos se une a la
+                                textura crujiente de las nueces de nogal seleccionadas. Ideal para acompañar quesos
+                                finos.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Dátiles en Trozos</span>
+                                <span class="feature-tag">Nuez de Nogal</span>
+                                <span class="feature-tag">Maridaje Perfecto</span>
+                            </div>
+                            <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20quiero%20ordenar%20el%20Pan%20de%20D%C3%A1tiles%20y%20Nuez"
+                                target="_blank" class="btn-primary card-cta">Pedir Este Sabor</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Calabaza -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/pan_calabaza.jpg" alt="Pan de Calabaza" class="service-image">
+                            <div class="service-overlay">
+                                <h3 class="service-title-front">Pan de Calabaza</h3>
+                                <div class="price-badge">₡4,900</div>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Pan de Calabaza</h3>
+                            <p class="service-description">Con puré natural de calabaza integrado a la masa, que le
+                                aporta un color dorado hermoso, una miga extremadamente suave y un sutil dulzor terroso.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">Puré de Calabaza</span>
+                                <span class="feature-tag">Semillas de Calabaza</span>
+                                <span class="feature-tag">Miga Ultra Suave</span>
+                            </div>
+                            <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20quiero%20ordenar%20el%20Pan%20de%20Calabaza"
+                                target="_blank" class="btn-primary card-cta">Pedir Este Sabor</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRID DE SABORES SECUNDARIOS / SHOWCASE -->
+    <section class="secondary-flavors-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Otros Sabores Tradicionales & Especiales</h2>
+                <p class="section-subtitle">Opciones clásicas y saladas perfectas para tostadas, desayunos o
+                    acompañamientos diarios.</p>
+            </div>
+
+            <div class="sec-flavors-grid">
+                <!-- Pan Blanco -->
+                <div class="sec-flavor-card glass-card">
+                    <div class="sec-flavor-img-wrap">
+                        <img src="images/pan_blanco.jpg" alt="Pan Blanco" class="sec-flavor-img">
+                    </div>
+                    <div class="sec-flavor-info">
+                        <div class="sec-flavor-header">
+                            <h3>Pan Blanco Clásico</h3>
+                            <span class="sec-flavor-price">₡4,000</span>
+                        </div>
+                        <p class="sec-flavor-desc">Nuestra receta fundacional. Harina de trigo seleccionada, agua
+                            filtrada, sal marina y nuestra masa madre activa. Sabor equilibrado.</p>
+                        <div class="sec-flavor-footer">
+                            <span class="ingredients"><i class="fa-solid fa-circle-info"></i> Harina, masa madre, agua,
+                                sal</span>
+                            <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20quiero%20ordenar%20el%20Pan%20Blanco%20Cl%C3%A1sico"
+                                target="_blank" class="sec-order-btn"><i class="fa-solid fa-plus"></i> Pedir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Páprika -->
+                <div class="sec-flavor-card glass-card">
+                    <div class="sec-flavor-img-wrap">
+                        <img src="images/pan_paprika.jpg" alt="Pan de Páprika" class="sec-flavor-img">
+                    </div>
+                    <div class="sec-flavor-info">
+                        <div class="sec-flavor-header">
+                            <h3>Pan de Páprika y Chile Dulce</h3>
+                            <span class="sec-flavor-price">₡4,300</span>
+                        </div>
+                        <p class="sec-flavor-desc">Un pan salado con un toque ahumado exquisito. La masa incorpora
+                            páprika española y trozos pequeños de chile dulce costarricense.</p>
+                        <div class="sec-flavor-footer">
+                            <span class="ingredients"><i class="fa-solid fa-circle-info"></i> Páprika, chile dulce, masa
+                                madre</span>
+                            <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20quiero%20ordenar%20el%20Pan%20de%20P%C3%A1prika"
+                                target="_blank" class="sec-order-btn"><i class="fa-solid fa-plus"></i> Pedir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integral con Semillas -->
+                <div class="sec-flavor-card glass-card">
+                    <div class="sec-flavor-img-wrap">
+                        <img src="images/pan_integral.jpg" alt="Pan Integral" class="sec-flavor-img">
+                    </div>
+                    <div class="sec-flavor-info">
+                        <div class="sec-flavor-header">
+                            <h3>Pan Integral de Semillas</h3>
+                            <span class="sec-flavor-price">₡4,400</span>
+                        </div>
+                        <p class="sec-flavor-desc">Una mezcla perfecta de harina blanca y harina integral fina,
+                            enriquecida con un mix crujiente de semillas de sésamo, linaza y girasol.</p>
+                        <div class="sec-flavor-footer">
+                            <span class="ingredients"><i class="fa-solid fa-circle-info"></i> Harina integral, semillas,
+                                masa madre</span>
+                            <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20quiero%20ordenar%20el%20Pan%20Integral%20de%20Semillas"
+                                target="_blank" class="sec-order-btn"><i class="fa-solid fa-plus"></i> Pedir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cheddar y Jalapeño -->
+                <div class="sec-flavor-card glass-card">
+                    <div class="sec-flavor-img-wrap">
+                        <img src="images/pan_presentacion.jpg" alt="Pan de Queso Cheddar y Jalapeño"
+                            class="sec-flavor-img">
+                    </div>
+                    <div class="sec-flavor-info">
+                        <div class="sec-flavor-header">
+                            <h3>Queso Cheddar y Jalapeño</h3>
+                            <span class="sec-flavor-price">₡5,200</span>
+                        </div>
+                        <p class="sec-flavor-desc">Intenso y audaz. Dados de queso cheddar curado y rodajas de chile
+                            jalapeño fresco se funden en el alveolado de la masa madre durante el horneado.</p>
+                        <div class="sec-flavor-footer">
+                            <span class="ingredients"><i class="fa-solid fa-circle-info"></i> Queso cheddar, jalapeño,
+                                masa madre</span>
+                            <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20quiero%20ordenar%20el%20Pan%20de%20Queso%20Cheddar%20y%20Jalape%C3%B1o"
+                                target="_blank" class="sec-order-btn"><i class="fa-solid fa-plus"></i> Pedir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONSERVATION SECTION (CÓMO CONSERVAR) -->
+    <section class="conservation-section" id="conservacion">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">GUÍA PRÁCTICA</span>
+                <h2 class="section-title">¿Cómo Conservar tu Masa Madre?</h2>
+                <p class="section-subtitle">Al ser un pan natural sin conservantes químicos ni preservantes
+                    artificiales, te recomendamos seguir estos sencillos pasos para que conserve su frescura.</p>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="tab-fresh">
+                    <i class="fa-solid fa-house"></i> 1-2 Días: Ambiente
+                </button>
+                <button class="tab-btn" data-tab="tab-refrigerated">
+                    <i class="fa-solid fa-temperature-arrow-down"></i> Hasta 10 Días: Refrigeración
+                </button>
+                <button class="tab-btn" data-tab="tab-frozen">
+                    <i class="fa-solid fa-snowflake"></i> Hasta 2 Meses: Congelación
+                </button>
+            </div>
+
+            <!-- Tabs Content -->
+            <div class="tabs-content-container">
+                <!-- Tab 1: Ambiente -->
+                <div class="tab-content active" id="tab-fresh">
+                    <div class="tab-layout">
+                        <div class="tab-text">
+                            <h3>Frescura Diaria Natural</h3>
+                            <p>El pan de masa madre desarrolla una acidez natural que le ayuda a conservarse mejor que
+                                el pan industrial, pero al no tener conservantes artificiales requiere ciertos cuidados:
+                            </p>
+                            <ul class="conservation-list">
+                                <li><i class="fa-solid fa-circle-check text-primary"></i> Mantén el pan a temperatura
+                                    ambiente en su empaque original de papel.</li>
+                                <li><i class="fa-solid fa-circle-check text-primary"></i> Si buscas conservar la miga
+                                    suave, colócalo dentro de una bolsa hermética tipo Ziploc bien sellada.</li>
+                                <li><i class="fa-solid fa-circle-xmark text-danger"></i> Evita la luz solar directa o
+                                    lugares excesivamente húmedos en la cocina.</li>
+                            </ul>
+                            <div class="tip-box">
+                                <i class="fa-solid fa-lightbulb text-warning"></i>
+                                <span><strong>Consejo:</strong> Si la corteza se suaviza en la bolsa Ziploc, tuesta una
+                                    rebanada unos minutos para devolverle su textura super crujiente original.</span>
+                            </div>
+                        </div>
+                        <div class="tab-visual">
+                            <img src="images/pan_presentacion.jpg" alt="Presentación de pan de molde"
+                                class="conservation-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Refrigerado -->
+                <div class="tab-content" id="tab-refrigerated">
+                    <div class="tab-layout">
+                        <div class="tab-text">
+                            <h3>Preservación en Frío</h3>
+                            <p>Si consideras que no terminarás la hogaza en los primeros dos días, la refrigeración es
+                                la forma ideal de mantener la miga en perfecto estado antes de consumirla:</p>
+                            <ul class="conservation-list">
+                                <li><i class="fa-solid fa-circle-check text-primary"></i> Introduce el pan entero o
+                                    cortado dentro de una bolsa tipo Ziploc bien hermética.</li>
+                                <li><i class="fa-solid fa-circle-check text-primary"></i> Expulsa la mayor cantidad de
+                                    aire de la bolsa antes de cerrarla.</li>
+                                <li><i class="fa-solid fa-circle-check text-primary"></i> Mantén la bolsa en la sección
+                                    media o inferior del refrigerador hasta por 10 días.</li>
+                            </ul>
+                            <div class="tip-box">
+                                <i class="fa-solid fa-fire text-primary"></i>
+                                <span><strong>Regeneración:</strong> Pasa las rebanadas por el tostador, sartén o air
+                                    fryer durante 2-3 minutos. Quedará como recién salido del horno.</span>
+                            </div>
+                        </div>
+                        <div class="tab-visual">
+                            <img src="images/about_image.jpg" alt="Tostada de pan de chocolate regenerado"
+                                class="conservation-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Congelador -->
+                <div class="tab-content" id="tab-frozen">
+                    <div class="tab-layout">
+                        <div class="tab-text">
+                            <h3>Conservación a Largo Plazo</h3>
+                            <p>¡La congelación es el secreto mejor guardado de la masa madre! Permite detener el tiempo
+                                y disfrutar de pan fresco en cualquier momento:</p>
+                            <ul class="conservation-list">
+                                <li><i class="fa-solid fa-circle-check text-primary"></i> <strong>Paso Clave:</strong>
+                                    Rebana el pan completamente antes de congelarlo.</li>
+                                <li><i class="fa-solid fa-circle-check text-primary"></i> Coloca las rebanadas separadas
+                                    o juntas en una bolsa hermética Ziploc.</li>
+                                <li><i class="fa-solid fa-circle-check text-primary"></i> Almacena en el congelador por
+                                    un tiempo máximo de 2 meses.</li>
+                            </ul>
+                            <div class="tip-box">
+                                <i class="fa-solid fa-wand-magic-sparkles text-primary"></i>
+                                <span><strong>Del Congelador al Plato:</strong> No necesitas descongelarlo antes. Toma
+                                    una rebanada congelada y colócala directamente en el tostador caliente, horno a
+                                    180°C o air fryer. ¡Se regenera al instante!</span>
+                            </div>
+                        </div>
+                        <div class="tab-visual">
+                            <img src="images/hero_visual.jpg" alt="Panes artesanales congelación"
+                                class="conservation-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHO E ARE / ABOUT SECTION (SOBRE NOSOTROS) -->
+    <section class="about-section" id="nosotros">
+        <div class="container about-grid">
+            <div class="about-visual-area">
+                <div class="about-img-frame">
+                    <img src="images/about_image.jpg" alt="Elizabeth Rodríguez preparando masa madre" class="about-img">
+                </div>
+                <div class="experience-card glass-card">
+                    <span class="experience-num">12+</span>
+                    <span class="experience-text">Horas de amor en cada amasado</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <span class="section-label">QUIÉNES SOMOS</span>
+                <h2 class="section-title">Hecho a Mano con Dedicación</h2>
+                <p class="about-lead">
+                    Detrás de Bechyss está Elizabeth Rodríguez, apasionada por la panificación tradicional que decidió
+                    rescatar la forma más pura y natural de hacer pan en Tibás, San José.
+                </p>
+                <p class="about-text">
+                    La masa madre no es solo harina y agua; es paciencia, tiempo y respeto por los procesos biológicos
+                    de fermentación. Cada uno de nuestros "bollitos" es moldeado a mano individualmente, fermentado en
+                    frío de 12 a 48 horas y horneado en el punto óptimo para crear una costra crujiente espectacular y
+                    un alveolado aireado y suave por dentro.
+                </p>
+                <p class="about-text">
+                    Nuestros panes son 100% libres de aditivos, azúcares añadidos o levaduras comerciales. El resultado
+                    es un pan saludable, de bajo índice glucémico y sumamente amigable con tu digestión.
+                </p>
+
+                <div class="about-signature">
+                    <div class="signature-line">Elizabeth Rodríguez</div>
+                    <span class="signature-sub">Panadera Fundadora de Bechyss</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">CLIENTES FELICES</span>
+                <h2 class="section-title">¿Qué dicen de Bechyss?</h2>
+                <p class="section-subtitle">La opinión de quienes disfrutan de nuestros panes en sus hogares en San
+                    José.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonio 1 -->
+                <div class="testimonial-card glass-card">
+                    <div class="rating-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">"El Pan de Matcha y Chocolate Blanco es de otro mundo. No he probado
+                        nada parecido en todo Costa Rica. El alveolado y la corteza son perfectos, y se nota el amor en
+                        su elaboración."</p>
+                    <div class="client-info">
+                        <div class="client-avatar-fallback"><i class="fa-solid fa-user-circle"></i></div>
+                        <div>
+                            <h4 class="client-name">Carolina Alpízar</h4>
+                            <span class="client-location">Moravia, San José</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="testimonial-card glass-card">
+                    <div class="rating-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">"Tengo problemas digestivos y el pan comercial me caía muy pesado.
+                        Desde que compro la masa madre integral y de páprika de Elizabeth, puedo volver a desayunar
+                        tostadas sin ninguna molestia. ¡100% recomendado!"</p>
+                    <div class="client-info">
+                        <div class="client-avatar-fallback"><i class="fa-solid fa-user-circle"></i></div>
+                        <div>
+                            <h4 class="client-name">Mauricio Vargas</h4>
+                            <span class="client-location">Tibás, San José</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="testimonial-card glass-card">
+                    <div class="rating-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-quote">"¡El Pan de Chocolate tostado con mantequilla de maní es mi cena
+                        favorita! El contraste de la acidez de la masa con el cacao belga es espectacular. Excelente
+                        presentación y empaque."</p>
+                    <div class="client-info">
+                        <div class="client-avatar-fallback"><i class="fa-solid fa-user-circle"></i></div>
+                        <div>
+                            <h4 class="client-name">Daniela Solano</h4>
+                            <span class="client-location">Escazú, San José</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRESENTATION DETAILS SECTION -->
+    <section class="presentation-section">
+        <div class="container presentation-layout glass-card">
+            <div class="presentation-content">
+                <span class="section-label">CÓMO TRABAJAMOS</span>
+                <h2 class="section-title">Presentación de Nuestro Pan de Molde</h2>
+                <p>Todos nuestros sabores principales se elaboran en un <strong>molde rectangular especial</strong> con
+                    una alta hidratación del <strong>75%</strong>, lo que garantiza una miga muy aireada, elástica y de
+                    textura húmeda perfecta.</p>
+                <div class="details-list">
+                    <div class="detail-item">
+                        <span class="detail-icon"><i class="fa-solid fa-scale-balanced"></i></span>
+                        <div class="detail-text">
+                            <h4>Venta por Kilogramo</h4>
+                            <p>El precio indicado es por kilogramo de pan ya horneado y listo para disfrutar.</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon"><i class="fa-solid fa-box-open"></i></span>
+                        <div class="detail-text">
+                            <h4>Empacado y Rebanado</h4>
+                            <p>Se empaca cuidadosamente rebanado en bolsas de papel kraft ecológicas, ideales para
+                                conservar la costra crujiente.</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon"><i class="fa-solid fa-hourglass-half"></i></span>
+                        <div class="detail-text">
+                            <h4>Bajo Pedido (24-48h anticipación)</h4>
+                            <p>Respetamos las fermentaciones largas. Por favor realiza tu pedido con anticipación para
+                                asegurar su correcta fermentación.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20quiero%20conocer%20la%20disponibilidad%20de%20panes%20para%20esta%20semana"
+                    target="_blank" class="btn-primary"><i class="fa-brands fa-whatsapp"></i> Consultar
+                    Disponibilidad</a>
+            </div>
+            <div class="presentation-visual">
+                <img src="images/pan_presentacion.jpg" alt="Masa madre en el horno de Bechyss" class="presentation-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="final-cta-section" id="contacto">
+        <div class="container text-center">
+            <div class="cta-card">
+                <span class="section-label">¿LISTO PARA PROBAR EL VERDADERO PAN?</span>
+                <h2 class="cta-title">Disfruta la Experiencia Bechyss en Casa</h2>
+                <p class="cta-subtitle">Haz tu pedido hoy mismo y recíbelo fresco en Tibás y zonas aledañas de San José.
+                    Horneamos con amor bajo pedido.</p>
+
+                <div class="contact-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Elizabeth Rodríguez</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Tibás, San José</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>8608-4667</span>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/50686084667?text=Hola%20Elizabeth,%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20hacer%20un%20pedido%20de%20pan%20de%20masa%20madre."
+                    target="_blank" class="btn-primary btn-cta-pulse">
+                    <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo-area">
+                    <img src="images/logo_circle.png" alt="Bechyss Logo" class="footer-logo">
+                    <span class="brand-name">BECHYSS</span>
+                </div>
+                <p class="footer-desc">Pan de masa madre artesanal premium, 100% natural, fermentado de 12 a 48 horas en
+                    Tibás, San José.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/50686084667" target="_blank" aria-label="WhatsApp"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Menú</h3>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sabores">Nuestros Sabores</a></li>
+                    <li><a href="#conservacion">Guía de Conservación</a></li>
+                    <li><a href="#nosotros">Quiénes Somos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Sabores Top</h3>
+                <ul class="footer-links">
+                    <li><a href="#sabores">Matcha y Chocolate Blanco</a></li>
+                    <li><a href="#sabores">Pan de Chocolate</a></li>
+                    <li><a href="#sabores">Queso y Hierbas Italianas</a></li>
+                    <li><a href="#sabores">Dátiles y Nuez</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p class="contact-info"><i class="fa-solid fa-user text-primary"></i> Elizabeth Rodríguez</p>
+                <p class="contact-info"><i class="fa-solid fa-location-dot text-primary"></i> Tibás, San José, Costa
+                    Rica</p>
+                <p class="contact-info"><i class="fa-solid fa-phone text-primary"></i> +506 8608-4667</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Bechyss. Todos los derechos reservados. Hecho con <i
+                    class="fa-solid fa-heart text-danger"></i> por Elizabeth Rodríguez.</p>
+        </div>
+    </footer>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
