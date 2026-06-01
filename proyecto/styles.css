@@ -780,6 +780,10 @@ h1, h2, h3, h4, h5, h6 {
     filter: drop-shadow(0 18px 30px rgba(var(--primary-rgb), 0.16));
 }
 
+.services-grid .service-card-flip:last-child {
+    grid-column: 2;
+}
+
 .service-card-inner {
     position: relative;
     width: 100%;
@@ -864,6 +868,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 28px 24px;
     transform: rotateY(180deg);
     text-align: center;
     border: 1px solid rgba(var(--primary-rgb), 0.35);
@@ -886,6 +891,20 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.95rem;
     color: var(--text-secondary);
     line-height: 1.5;
+}
+
+.ingredients-list {
+    width: 100%;
+    margin: 0 0 20px;
+    padding-left: 20px;
+    color: var(--text-secondary);
+    font-size: 0.94rem;
+    line-height: 1.45;
+    text-align: left;
+}
+
+.ingredients-list li {
+    margin-bottom: 6px;
 }
 
 .service-features {
@@ -1769,6 +1788,10 @@ h1, h2, h3, h4, h5, h6 {
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
+    }
+
+    .services-grid .service-card-flip:last-child {
+        grid-column: auto;
     }
     
     .sec-flavors-grid {
