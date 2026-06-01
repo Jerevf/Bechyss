@@ -1189,10 +1189,69 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
+   BENEFITS SECTION
+   ========================================================================== */
+.benefits-section {
+    background-color: var(--bg-primary);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.benefit-card {
+    padding: 28px 24px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.benefit-icon {
+    width: 52px;
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: rgba(var(--primary-rgb), 0.1);
+    color: var(--primary-600);
+    font-size: 1.35rem;
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.benefit-card p {
+    color: var(--text-secondary);
+    line-height: 1.55;
+    font-size: 0.96rem;
+}
+
+.benefits-note {
+    max-width: 760px;
+    margin: 32px auto 0;
+    text-align: center;
+    color: var(--text-secondary);
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
    ABOUT SECTION
    ========================================================================== */
 .about-section {
     background-color: var(--bg-secondary);
+}
+
+.about-mobile-heading {
+    display: none;
 }
 
 .about-grid {
@@ -1220,6 +1279,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center top;
     filter: brightness(0.9);
 }
 
@@ -1793,6 +1853,10 @@ h1, h2, h3, h4, h5, h6 {
     .services-grid .service-card-flip:last-child {
         grid-column: auto;
     }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
     
     .sec-flavors-grid {
         grid-template-columns: 1fr;
@@ -1882,6 +1946,10 @@ h1, h2, h3, h4, h5, h6 {
     .services-grid {
         grid-template-columns: 1fr;
     }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
     
     .service-card-flip {
         height: 380px;
@@ -1916,6 +1984,16 @@ h1, h2, h3, h4, h5, h6 {
         bottom: -15px;
         padding: 16px;
         max-width: 220px;
+    }
+
+    .about-mobile-heading {
+        display: block;
+        margin-bottom: 28px;
+    }
+
+    .about-content > .section-label,
+    .about-content > .section-title {
+        display: none;
     }
     
     .experience-num {
