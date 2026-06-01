@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     };
 
+    const isTouchDevice = window.matchMedia("(hover: none), (pointer: coarse)").matches || "ontouchstart" in window;
+    document.documentElement.classList.toggle("is-touch", isTouchDevice);
+
     // ==========================================================================
     // NAVBAR STICKY & ACTIVE LINKS ON SCROLL
     // ==========================================================================
@@ -96,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     flipCards.forEach(card => {
         card.addEventListener("click", function(e) {
             // Only toggle on click if it's a mobile/touch device
-            if (window.innerWidth < 1024) {
+            if (isTouchDevice || window.innerWidth < 1024) {
                 // If the user clicked the CTA button inside the card, let it go to the link
                 if (e.target.classList.contains("btn-primary") || e.target.closest(".btn-primary")) {
                     return;
