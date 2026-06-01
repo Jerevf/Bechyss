@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 // If it is a grid, animate children with stagger
                 const staggeredChildren = entry.target.querySelectorAll(
-                    ".metric-card, .service-card-flip, .sec-flavor-card, .testimonial-card"
+                    ".metric-card, .service-card-flip, .sec-flavor-card"
                 );
                 
                 staggeredChildren.forEach((child, index) => {
@@ -218,7 +218,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".secondary-flavors-section"),
         document.querySelector(".conservation-section"),
         document.querySelector(".about-section"),
-        document.querySelector(".testimonials-section"),
         document.querySelector(".presentation-section"),
         document.querySelector(".final-cta-section")
     ];

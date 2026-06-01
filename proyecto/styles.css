@@ -130,13 +130,10 @@ h1, h2, h3, h4, h5, h6 {
    BACKGROUND GLOW & PARTICLES
    ========================================================================== */
 .bg-glow {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    position: fixed;
+    inset: 0;
     width: 100vw;
-    height: 100%;
-    min-height: 1000px;
+    height: 100vh;
     background:
         radial-gradient(ellipse at 25% 8%, rgba(var(--primary-rgb), 0.24) 0%, transparent 42%),
         radial-gradient(ellipse at 78% 18%, rgba(var(--pink-rgb), 0.22) 0%, transparent 38%),
@@ -146,11 +143,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .particles-container {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: fixed;
+    inset: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     pointer-events: none;
     overflow: hidden;
     z-index: 1;
@@ -470,9 +466,6 @@ h1, h2, h3, h4, h5, h6 {
 .glass-card .section-label,
 .glass-card .section-subtitle,
 .glass-card .metric-value,
-.glass-card .testimonial-quote,
-.glass-card .client-name,
-.glass-card .client-location,
 .glass-card .sec-flavor-desc,
 .glass-card .about-text,
 .glass-card .about-lead,
@@ -1350,62 +1343,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   TESTIMONIALS SECTION
-   ========================================================================== */
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-}
-
-.testimonial-card {
-    padding: 40px 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.rating-stars {
-    display: flex;
-    gap: 6px;
-    color: var(--warning);
-    margin-bottom: 24px;
-}
-
-.testimonial-quote {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--text-secondary);
-    font-style: italic;
-    margin-bottom: 30px;
-    flex-grow: 1;
-}
-
-.client-info {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    border-top: 1px solid rgba(77, 52, 34, 0.1);
-    padding-top: 20px;
-}
-
-.client-avatar-fallback {
-    font-size: 2.5rem;
-    color: var(--text-quaternary);
-}
-
-.client-name {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text-primary);
-}
-
-.client-location {
-    font-size: 0.8rem;
-    color: var(--text-quaternary);
-}
-
-/* ==========================================================================
    PRESENTATION SECTION
    ========================================================================== */
 .presentation-section {
@@ -1755,8 +1692,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Base states for observer animation */
 .metrics-grid .metric-card,
 .services-grid .service-card-flip,
-.sec-flavor-card,
-.testimonial-card {
+.sec-flavor-card {
     opacity: 0;
 }
 
@@ -1879,11 +1815,6 @@ h1, h2, h3, h4, h5, h6 {
     
     .about-img-frame {
         height: 400px;
-    }
-    
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
     }
     
     .presentation-layout {
