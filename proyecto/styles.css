@@ -895,6 +895,24 @@ h1, h2, h3, h4, h5, h6 {
         0 0 0 1px rgba(var(--primary-rgb), 0.45),
         0 4px 18px rgba(var(--primary-rgb), 0.48);
 }
+.flip-hint {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+    padding: 8px 14px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.94);
+    color: #000000;
+    font-size: 0.82rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+.flip-hint i {
+    font-size: 0.9rem;
+}
 
 .service-card-back {
     display: flex;
